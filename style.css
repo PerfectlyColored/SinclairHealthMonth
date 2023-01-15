@@ -1,0 +1,165 @@
+html, body {
+  margin: 0;
+  padding: 0;
+ width: 100%;
+/*   border: 2px solid green; */
+}
+body {
+  padding: 2em calc(0.2em + 7vw);
+  height: 100%;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+* {
+/*   border: 1px solid red; */
+}
+
+/* all */
+.button {
+  border-radius: 2em;
+  transition: color 1s;
+  font-size: 1.5em;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: -8px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.dark {
+  
+color: #605252;
+}
+/* homecard */
+
+
+.homecard {
+  min-height: 70vh;
+  border-radius: 2em;
+  padding: 2em;
+  color: #ffffff;
+  background-color: #fff0f0;
+}
+.homecard .row, .homecard .row {
+  border-radius: 2em;
+}
+.homecard .row {
+  overflow: hidden;
+}
+.content {
+  padding: 2em;
+  background-color: #60c390;
+  
+}
+.homecard .col-md-5 {
+  padding: 2em;
+  
+}
+@media (min-width: 992px) { 
+  
+  .content {
+    padding-right: 5em;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  }
+  .signs::after {
+  content: "";
+  background-color: #e7b0d4;
+  position: absolute;
+  width: 150%;
+  height: 2em;
+  left: -10em;
+  top: 50%;
+  opacity: 1;
+  z-index: -1;
+}
+ 
+                             }
+.title {
+  font-size: calc(1em + 4vw);
+}
+/* 
+VIEWAREA #2, signs and stigmas */
+.didyouknow {
+  margin-top: 3em;
+  min-height: 20vh;
+  border-radius: 2em;
+  background-color: #60c390;
+  padding: 3em;
+  color: white;
+}
+/* signs viewarea 3 */
+.signs {
+  position: relative;
+  margin-top: 3em;
+}
+.signcard {
+   background-color: #fff0f0;
+   padding: 1em;
+   margin: 0;
+  color: #605252;
+  border-radius: 2em;
+  
+}
+.signstitle {
+  
+color: #605252;
+}
+ul {
+  text-align: left;
+}
+.signs .col-md-3 {
+  margin-bottom: 2em;
+}
+
+
+/* 
+view area 4 */
+.notalone {
+  background-color: #e9cade;
+  border-radius: 2em;
+  padding: 2em;
+  margin-top: 3em;
+  color: #535050;
+}
+
+.buttonsolid {
+  transition: background-color 1s;
+  text-align: center;
+  max-width: 9em;
+  background-color: #e7b0d4;
+  padding: 0.5em 2em;
+  margin-top: 1em;
+  border-radius: 2em;
+  flex-grow: 0;
+}
+.buttonsolid:hover {
+  background-color: #ce9cbd;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
